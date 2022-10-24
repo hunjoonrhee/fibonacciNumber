@@ -1,5 +1,14 @@
-package org.example;public class Main {
+package org.example;
+
+import java.util.Scanner;
+
+public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Bitte geben Sie eine Zahl ein:");
+        int input = scanner.nextInt();
+        Fibonacci fibonacci = new Fibonacci();
+        int result = fibonacci.getFibonacciNumber(input);
+        System.out.println("Die Fibonacci Zahl für " + input + " ist " + result);
     }
 }
